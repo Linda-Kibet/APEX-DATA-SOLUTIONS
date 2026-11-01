@@ -186,3 +186,24 @@
 
 </body>
 </html>
+<!-- JavaScript Widget styles & library fetched via CDN -->
+<link rel="stylesheet" href="https://jsdelivr.net">
+<script src="https://jsdelivr.net"></script>
+
+<!-- Container for the widget element -->
+<div id="whatsapp-chat-widget"></div>
+
+<script>
+  // Initialize the widget once DOM content loads
+  window.addEventListener('DOMContentLoaded', () => {
+    new WhatsAppWidget({
+      el: '#whatsapp-chat-widget',
+      phone: '15551234567', // Replace with your complete international number (no spaces or '+' sign)
+      message: 'Hello! I am interested in your data solutions.', // Optional default message text
+      title: 'Apex Data Solutions Support', // Widget header title text
+      subTitle: 'Typically replies within a few minutes',
+      position: 'right', // Standard position at 'left' or 'right' corner
+      color: '#25D366' // Hex color code matching official brand assets
+    });
+  });
+</script>
